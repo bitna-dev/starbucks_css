@@ -1,0 +1,78 @@
+/* common */
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Nanum Gothic", sans-serif;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+}
+header .inner {
+  width: 1100px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: orange;
+  position: relative;
+}
+header .logo {
+  position: absolute;
+  height: 75px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* sub_menu */
+header .sub_menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+}
+header .sub_menu ul.menu {
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+header .sub_menu ul.menu li {
+  position: relative;
+}
+header .sub_menu ul.menu li::before {
+  content: "";
+  /* display: block; */
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .sub_menu ul.menu li:first-child::before {
+  display: none;
+}
+
+header .sub_menu ul.menu li a {
+  display: block;
+  font-size: 12px;
+  padding: 11px 16px;
+  color: #656565;
+}
+header .sub_menu ul.menu li a:hover {
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+header .sub_menu search {
+}
+header .sub_menu search input {
+}
+header .sub_menu search input .material-icons {
+}
